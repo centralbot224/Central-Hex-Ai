@@ -1,0 +1,165 @@
+# ============================================
+# 🛡️ .gitignore pour CENTRAL-HEX BACKEND
+# ============================================
+
+# 🚨 SÉCURITÉ - NE JAMAIS COMMITER CES FICHIERS ! 🚨
+# ============================================
+
+# 🔴 VARIABLES D'ENVIRONNEMENT (CONTENANT TES CLÉS API)
+.env
+.env.local
+.env.production
+.env.development
+.env.staging
+.env.test
+
+# 🔴 DOSSIER DE CONFIGURATION (PEUT CONTENIR DES SECRETS)
+config/
+!config/example.js
+
+# ============================================
+# 📦 DÉPENDANCES NODE
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================
+# 📊 LOGS
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ============================================
+# 🔧 FICHIERS SYSTÈME
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ============================================
+# 💻 IDE / ÉDITEURS
+# ============================================
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# WebStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ============================================
+# 📦 BUILD / DIST
+# ============================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+
+# ============================================
+# 🧪 TESTS / COVERAGE
+# ============================================
+coverage/
+.nyc_output/
+.reports/
+test-results/
+junit.xml
+
+# ============================================
+# 📦 DOCKER
+# ============================================
+.dockerignore
+Dockerfile
+docker-compose*.yml
+!docker-compose.example.yml
+
+# ============================================
+# 🔍 MISC
+# ============================================
+*.pid
+*.seed
+*.pid.lock
+.history
+.trace
+*.tgz
+*.tmp
+*.temp
+.tmp
+.temp
+
+# ============================================
+# 🔒 FICHIERS SENSIBLES SPÉCIFIQUES
+# ============================================
+# Fichiers de clés privées
+*.key
+*.pem
+*.crt
+*.p12
+
+# Fichiers de configuration avec mots de passe
+*.secret
+*.credentials
+
+# ============================================
+# ⚡ CACHES
+# ============================================
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.next
+.nuxt
+.cache
+.temp
+
+# ============================================
+# 📱 ENVIRONNEMENT DE DÉVELOPPEMENT
+# ============================================
+*.local
+*.orig
+*.log
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ============================================
+# 🚀 NOTE IMPORTANTE :
+# ============================================
+# Ce fichier protège tes secrets (clés API, mots de passe)
+# Ne JAMAIS commiter .env ou tes clés sur GitHub !
+#
+# ✅ À la place, crée un fichier .env.example avec :
+# PORT=5000
+# OPENAI_API_KEY=ta_clé_ici
+# MONGODB_URI=mongodb://localhost:27017/central-hex
